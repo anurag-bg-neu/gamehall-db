@@ -13,7 +13,7 @@ The following **required** functionality is completed:
 <!-- Make sure to check off completed functionality below -->
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
-  - [ ] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
   - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 
 
@@ -33,10 +33,16 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
+**🎥 Video walkthrough (Loom):** https://www.loom.com/share/b506f55a2a0e461d971fab68c0cab2cf
+
+<a href='https://www.loom.com/share/b506f55a2a0e461d971fab68c0cab2cf'><img src='https://cdn.loom.com/sessions/thumbnails/b506f55a2a0e461d971fab68c0cab2cf-5f1dfc165a38af25.gif' title='Video Walkthrough (Loom)' width='600' alt='Video Walkthrough (Loom)' /></a>
+
+**Scripted walkthrough of every feature**, including `SELECT * FROM characters;` on the Render database:
+
 <img src='docs/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with a scripted Playwright recording converted with ffmpeg (`tools/record_walkthrough.py`)
+Video recorded with [Loom](https://www.loom.com); GIF created with a scripted Playwright recording converted with ffmpeg (`tools/record_walkthrough.py`)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
