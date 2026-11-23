@@ -85,7 +85,7 @@ CREATE TABLE characters (
 2. `cp .env.example .env` and paste the URL into `DATABASE_URL`.
 3. `npm install`
 4. `npm run reset` creates the table and seeds it.
-5. `npm start`, then open http://localhost:3000
+5. `npm start`, then open http://localhost:3001
 
 All queries are parameterized. The searchable column is checked against an allowlist, so user input never reaches the SQL text.
 
