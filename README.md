@@ -4,7 +4,7 @@ Submitted by: **Anurag Bheemappa Gnanamurthy**
 
 About this web app: **GameHall is a listicle web app showcasing iconic video game characters, now served from a Render PostgreSQL database. Each character has a name, game, role, power rating, description, and avatar. The frontend is plain HTML, CSS, and JavaScript that fetches the roster from an Express API backed by Postgres. Users can browse the roster, search it by name, game, or role, and open a dedicated detail page for each character.**
 
-Time spent: **X** hours
+Time spent: **7** hours
 
 ## Required Features
 
