@@ -1,2 +1,5 @@
 node_modules/
 .env
+.venv/
+docs/*.webm
+__pycache__/

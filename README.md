@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
   - [ ] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+  - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 
 
 The following **optional** features are implemented:
@@ -33,10 +33,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='docs/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  GIF tool here
+GIF created with a scripted Playwright recording converted with ffmpeg (`tools/record_walkthrough.py`)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -86,6 +86,16 @@ CREATE TABLE characters (
 3. `npm install`
 4. `npm run reset` creates the table and seeds it.
 5. `npm start`, then open http://localhost:3001
+
+**Testing and recording** (optional; Python tooling lives in a local venv)
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r tools/requirements.txt
+.venv/bin/playwright install chromium
+.venv/bin/python tools/e2e_test.py            # 22 API + browser checks (server must be running)
+.venv/bin/python tools/record_walkthrough.py  # regenerates docs/walkthrough.gif (needs Docker for psql)
+```
 
 All queries are parameterized. The searchable column is checked against an allowlist, so user input never reaches the SQL text.
 
